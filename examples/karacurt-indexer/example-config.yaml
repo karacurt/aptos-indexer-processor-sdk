@@ -1,0 +1,10 @@
+# Configuration for KaracurtTest AwesomeEvent Indexer
+health_check_port: 8087
+server_config:
+  transaction_stream_config:
+    indexer_grpc_data_service_address: "https://grpc.devnet.aptoslabs.com:443"
+    auth_token: "AUTH_TOKEN"
+    request_name_header: "karacurt-awesome-events-processor"
+    starting_version: 83230000  # Start around when our contract was deployed
+  postgres_config:
+    connection_string: postgresql://postgres:@localhost:5432/karacurt_indexer

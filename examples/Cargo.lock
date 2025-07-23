@@ -1778,6 +1778,25 @@ dependencies = [
 ]
 
 [[package]]
+name = "karacurt-indexer"
+version = "1.0.0"
+dependencies = [
+ "anyhow",
+ "aptos-indexer-processor-sdk",
+ "async-trait",
+ "chrono",
+ "clap",
+ "diesel",
+ "diesel_migrations",
+ "field_count",
+ "rayon",
+ "serde",
+ "serde_json",
+ "tokio",
+ "tracing",
+]
+
+[[package]]
 name = "lazy_static"
 version = "1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
